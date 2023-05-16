@@ -1,0 +1,12 @@
+.banner {
+  background-image: url("../img/star.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: green;
+  min-height: 800px;
+  background-position-y: 55rem;
+  background-position-x: 20rem;
+  display: flex;
+  text-align: center;
+  padding-top: 10rem;
+}/*# sourceMappingURL=landing.css.map */

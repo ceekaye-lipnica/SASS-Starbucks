@@ -1,0 +1,61 @@
+$clr-dark: hsl(0, 0%, 20%);
+$clr-green: hsl(159, 100%, 19%);
+$clr-d-green: hsl(164, 31%, 17%);
+$clr-l-green: hsl(160, 32%, 87%);
+$clr-gray: hsl(0, 0%, 46%);
+$clr-light: hsl(0, 0%, 100%);
+$clr-transparent: transparent;
+
+$break-sm: 500px;
+$break-lg: 1080px;
+
+
+
+/*-----------REPEATABLE PATTERNS---------------*/
+.btn {
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    border-radius: 5rem;
+}
+
+.btn.trans {
+    background: none;
+    color: hsl(0, 0%, 20%);
+    transition: .5s ease;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+.btn.trans:hover {
+    background-color: rgba(117, 117, 117, .2);
+    transition: .5s ease;
+}
+
+.btn.dark {
+    background: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    transition: .5s ease;
+    font-size: 1.5rem;
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+.btn.dark:hover {
+    background-color: #4b4b4c;
+    transition: .5s ease;
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+.btn.green {
+    background: $clr-green;
+    color: hsl(0, 0%, 100%);
+    transition: .5s ease;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.btn.green:hover {
+    background-color: $clr-green;
+    opacity: 90%;
+    transition: .5s ease;
+}

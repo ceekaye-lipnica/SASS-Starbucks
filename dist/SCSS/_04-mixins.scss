@@ -1,0 +1,22 @@
+// SYNTAX: @mixin MixinName(Parameter)
+
+
+@mixin mediaQuery($width: 48rem) {
+    @media screen and (min-width:$width) {
+        @content;
+    }
+}
+
+@mixin grid($cols: 1, $gap: 1rem) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-gap: $gap;
+}
+
+@mixin imgFit($width: 200px, $height: 200px) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    object-fit: center center;
+    display: block;
+}
