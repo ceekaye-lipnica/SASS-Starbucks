@@ -333,3 +333,98 @@
 
 
 }
+
+.delta{
+    background: #D4E9E2;
+    text-align: center;
+
+    &__wrapper{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding: 5rem 0;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 2rem 0;
+
+        a{
+            color: $clr-green;
+            text-decoration: underline;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .btn.green{
+        font-weight: 600;
+    }
+
+
+    img{
+        width: 20rem;
+    }
+}
+
+.question{
+    padding: 5rem 0
+    ;
+    h3{
+        font-size: 3rem;
+    }
+
+    p{
+        margin-top: 2rem;
+
+        a{
+            color: $clr-green;
+            text-decoration: underline;
+            
+            &:hover{
+                text-decoration: none;
+            }
+
+            i{
+                font-size: 1.2rem;
+                padding-left: .5rem;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+}
+
+.terms{
+    &__title{
+        h5{
+            font-size: 1.3rem;
+            font-weight: 100;
+        }
+
+        p{
+            font-size: 1.3rem;
+
+            a{
+                color: $clr-green;
+                text-decoration: underline;
+
+                &:hover{
+                    text-decoration: none;
+                }
+
+                i{
+                    font-size: 1.2rem;
+                    padding-left: .5rem;
+                }
+            }
+        }
+    }
+}

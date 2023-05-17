@@ -316,6 +316,78 @@ body {
   margin-top: 2rem;
 }
 
+.delta {
+  background: #D4E9E2;
+  text-align: center;
+}
+.delta__wrapper {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 5rem 0;
+}
+.delta h3 {
+  font-size: 3rem;
+}
+.delta p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 2rem 0;
+}
+.delta p a {
+  color: hsl(159, 100%, 19%);
+  text-decoration: underline;
+}
+.delta p a:hover {
+  text-decoration: none;
+}
+.delta .btn.green {
+  font-weight: 600;
+}
+.delta img {
+  width: 20rem;
+}
+
+.question {
+  padding: 5rem 0;
+}
+.question h3 {
+  font-size: 3rem;
+}
+.question p {
+  margin-top: 2rem;
+}
+.question p a {
+  color: hsl(159, 100%, 19%);
+  text-decoration: underline;
+}
+.question p a:hover {
+  text-decoration: none;
+}
+.question p a i {
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+  text-decoration: none;
+}
+
+.terms__title h5 {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+.terms__title p {
+  font-size: 1.3rem;
+}
+.terms__title p a {
+  color: hsl(159, 100%, 19%);
+  text-decoration: underline;
+}
+.terms__title p a:hover {
+  text-decoration: none;
+}
+.terms__title p a i {
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+}
+
 .header {
   position: fixed;
   width: 100%;
