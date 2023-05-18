@@ -1,0 +1,136 @@
+.footer {
+    background-color: $clr-light;
+    padding-bottom: 15rem;
+
+    &__wrapper {
+        .footer__social {
+            ul {
+                display: flex;
+                margin-bottom: 2rem;
+
+                li {
+                    border-radius: 50%;
+                    padding: 1rem;
+                    transition: .2s ease-in;
+
+
+                    &:hover{
+                        background-color: rgba(150, 149, 149, 0.349);
+                        border-radius: 50%;
+                        padding: 1rem;
+                        transition: .2s ease-out;
+                        transform-origin: center ;
+                    }
+
+                    a {
+                        i{
+                            font-size: 1.5rem;
+                            padding: none;
+                        }
+                        color: $clr-light;
+                        display: inline-block;
+                        background: rgb(10, 10, 10);
+                        padding: 1rem 1.2rem;
+                        border-radius: 5rem;
+                        // width: 4.5rem;
+                        text-align: center;
+                    }
+
+                    // FACEBOOK
+                    &:nth-child(2){
+                        a{
+                            padding: 1rem 1.45rem;
+
+                        }
+                    }
+                    // PINTEREST
+                    &:nth-child(3){
+                        a{
+                            padding: 1rem 1.35rem;
+                        }
+                    }
+                    // INSTAGRAM
+                    &:nth-child(4){
+                        a{
+                            padding: 1rem 1.25rem;
+
+                            i{
+                                font-size: 1.8rem;
+                                padding: none;
+                            }
+                        }
+                    }
+                    // YOUTUBE
+                    &:nth-child(5){
+                        a{
+                            padding: 1rem 1.15rem;
+                        }
+                    }
+                    // TWITTER
+                    &:nth-child(6){
+                        a{
+                            padding: 1rem 1.15rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    &__text {
+        display: block;
+
+        .privacy {
+
+            ul {
+                display: block;
+
+                li {
+                    // margin-right: 3rem;
+                    margin-bottom: 2rem;
+
+                    a {
+                        font-size: 1.5rem;
+                        font-weight: 500;
+
+                    }
+
+                    &:hover a {
+                        text-decoration: underline rgb(92, 84, 84);
+                    }
+                }
+            }
+        }
+
+        p {
+            margin-top: 3rem;
+            font-size: 1.3rem;
+            color: gray;
+        }
+    }
+
+    @include mediaQuery($break-lg) {
+        &__text {
+            .privacy {
+                ul {
+                    display: flex;
+
+                    li {
+                        margin-right: 2rem;
+                        margin-bottom: unset;
+
+                        &:not(:last-child){
+                            border-right: 1px solid black;
+                            padding-right: 2rem;
+                        }
+                    }
+                }
+            }
+
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

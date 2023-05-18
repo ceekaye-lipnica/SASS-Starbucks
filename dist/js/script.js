@@ -27,13 +27,19 @@ starNav.forEach((star) => {
 function removeActiveStar() {
 	starNav.forEach((star) => {
 		star.classList.remove("active");
-		star.style=("transition: .5s ease;");
 	});
 }
 
 function removeActiveContent() {
 	starContent.forEach((star) => {
 		star.classList.remove("active");
-		star.style=("transition: .5s ease;");
 	});
 }
+
+const links = document.querySelectorAll(".links__drop__item h4");
+links.forEach((baba) => {
+  baba.addEventListener("click", () => {
+    baba.nextElementSibling.classList.toggle("open");
+    baba.querySelector("i").classList.toggle("open");
+  });
+});

@@ -59,3 +59,18 @@ $break-lg: 1080px;
     opacity: 90%;
     transition: .5s ease;
 }
+
+.btn.greenTrans {
+    background: transparent;
+    color: hsl(0, 0%, 100%);
+    transition: .5s ease;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.btn.greenTrans:hover {
+    background-color: rgb(30, 30, 30);
+    opacity: 90%;
+    transition: .5s ease;
+}

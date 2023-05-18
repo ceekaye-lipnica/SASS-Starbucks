@@ -1,0 +1,107 @@
+.links{
+    padding: 3rem 0;
+
+    .container{
+        padding-bottom: 0;
+    }
+
+    &__drop{
+        border-top: 2px solid  rgba(150, 149, 149, 0.349);
+
+        &:last-child{
+            border-bottom:  2px solid  rgba(150, 149, 149, 0.349);
+        }
+
+        &__item{
+
+            &:not(:first-child),&:not(:last-child){
+                margin: 5rem 0;
+            }
+            
+            h4{
+                color: $clr-dark;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: .5s ease;
+                i{
+                    &.open{
+                        transform: rotate(180deg);
+                        transition: .5s ease;
+                    }
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            ul{
+                max-height: 0rem;
+                overflow: hidden;
+                transition: .5s ease;
+
+                &.open{
+                    max-height: 30rem;
+                    transition: .8s ease;
+                }
+                li{
+                    padding: 1.5rem 0;
+                    a{
+                        color: gray;
+                        font-size: 1.5rem;
+                    }
+
+                    &:hover{
+                        cursor: pointer;
+                        a{
+                            color: black;
+                        }
+                    }
+
+                    &:first-child{
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mediaQuery($break-lg){
+
+        padding: 3rem 0 0 0;
+
+
+        &__drop{
+            padding: 5rem 0;
+
+            margin: 0;
+            align-items: start;
+            gap: 3rem;
+
+            @include grid(6, 2rem);
+
+            &__item{
+
+                &:not(:first-child),&:not(:last-child){
+                    margin: 0;
+                }
+
+                h4{
+                    pointer-events: none;
+                    font-size: 2rem;
+                    i{
+                        display: none;
+                    }
+                }
+
+                ul{
+                    max-height: 75rem;
+                    margin: 1rem 0;
+                }
+            }
+        }
+        
+    }
+}

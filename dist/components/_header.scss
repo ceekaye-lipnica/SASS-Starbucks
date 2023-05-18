@@ -1,41 +1,32 @@
-
 .header{
-    // position: relative;
+    position: relative;
     position: fixed;
     width: 100%;
     box-shadow: 0 0 3px 0 rgb(60, 59, 59);
     background: white;
     &__wrapper{
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
     }
+
     .branding{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
         img{
-            width: 3rem;
+            width: 4rem;
         }
         ul{
             display: none;
         }
     }
 
-
-    &__nav{
-        ul{
-            li{
-                a{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-            }
-        }
-        &.open{
-            height: 100vh;
-            padding: 3rem 0;
-            transition: .5s ease;
-        }
+    &__actions1{
+        display: none;
     }
+
     &__nav{
         position: absolute;
         top: 6.5rem;
@@ -45,9 +36,12 @@
         transition: .5s ease;
         transition-delay: .2s;
         background: $clr-light;
-        
         ul{
+            padding: 2rem 0;
+
             li{
+                // display: flex;
+                // justify-content: space-between;
                 font-weight: 700;
                 margin-bottom: 4rem;
                 &:last-child{
@@ -60,6 +54,11 @@
                         color: hsl(159, 100%, 19%); 
                     }
                 }
+
+                // &:first-child{
+                //     display: flex;
+                //     justify-content: space-between;
+                // }
             }
         }
         &.open{
@@ -72,7 +71,7 @@
     &__actions{
         display: flex;
         justify-content: space-between;
-        align-items: start;
+        align-items: flex-start;
         flex-direction: column-reverse;
         gap: 2rem;
         .top{
@@ -82,32 +81,51 @@
         }
         .bottom{
             margin-top: 1rem;
+
+            a{
+                &:hover{
+                    color: $clr-green;
+                }
+            }
+
         }
         i{
             margin-right: 1rem;
         }
     }
     .toggle__menu{
+        border-radius: 5rem;
+        padding: 1rem 1rem;
+    
+        &:hover{
+        cursor: pointer;
+        border-radius: 5rem;
+        padding: 1rem 1rem;
+        background: rgba(118, 118, 118, 0.1);
+        }
+
         span{
-            width: 3rem;
-            height: .3rem;
-            // background-color: #333;
+            z-index: 999;
+            width: 2rem;
+            height: .2rem;
+            background: #333;
             display: block;
-            background-color: #767676;
             border-radius: 5rem;
             transition: .5s ease;
+            
             &:nth-child(2){
                 margin: .5rem 0;
             }
         }
+
         &.open{
             span{
                 &:first-child{
-                    transform: translate(0, 10px) rotate(225deg);
+                    transform: translate(0, 10px) rotate(45deg);
                     transition: .5s ease;
                 }
                 &:last-child{
-                    transform: translate(0, -6px) rotate(-225deg);
+                    transform: translate(0, -4px) rotate(-45deg);
                     transition: .5s ease;
                 }
                 &:nth-child(2){
@@ -116,18 +134,21 @@
                 }
             }
         }
+        
     }
-    
+
     @include mediaQuery($break-lg){
-        position: relative;
-        position: fixed;
         width: 100%;
         box-shadow: 0 0 3px 0 rgb(60, 59, 59);
+
         .branding{
             display: flex;
             align-items: center;
+            justify-content: space-between;
             ul{
+                display: unset;
                 display: flex;
+                align-items: center;
                 margin-left: 2rem;
                 gap:3rem;
                 li{
@@ -142,11 +163,29 @@
                 }
             }
         }
+        &__actions1{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+            #store{
+                i{
+                    padding-right: 1rem;
+                }
+
+                &:hover{
+                    color: $clr-green;
+                }
+            }
+
+            .buttons{
+                display: flex;
+                gap: 1rem;
+            }
+
+        }
         &__nav{
             display: none;
-            ul{
-                display: none;
-            }
         }
         .toggle__menu{
             display: none;
