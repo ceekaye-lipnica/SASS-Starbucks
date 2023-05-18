@@ -1,5 +1,6 @@
 .header{
     position: relative;
+    z-index: 2;
     position: fixed;
     width: 100%;
     box-shadow: 0 0 3px 0 rgb(60, 59, 59);
@@ -53,12 +54,11 @@
                     &:hover{
                         color: hsl(159, 100%, 19%); 
                     }
-                }
 
-                // &:first-child{
-                //     display: flex;
-                //     justify-content: space-between;
-                // }
+                    i{
+                        margin-left: 25rem;
+                    }
+                }
             }
         }
         &.open{

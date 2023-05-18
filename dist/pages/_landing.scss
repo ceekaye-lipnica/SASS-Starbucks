@@ -59,6 +59,7 @@
             margin-top: 1.5rem;
             a{
                 text-decoration: underline;
+                font-size: 1.8rem;
 
                 &:hover{
                     text-decoration: none;
@@ -95,7 +96,7 @@
                 }
             }
             h5{
-                font-size: 1.5rem;
+                font-size: 1.8rem;
                 font-weight: 100;
                 padding: 3rem 0;
             }
@@ -214,6 +215,8 @@
 }
 
 .coffee{
+    position: relative;
+    z-index: 1;
     &__nav{
         background: #f5f5f5;
         padding-top: 5rem;
@@ -452,16 +455,6 @@
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
 }
 
 .delta{
@@ -521,6 +514,7 @@
             background-position: left, right;
             background-position-x: 20rem, 140rem;
             background-size: 30rem;
+            padding: 15rem 0;
         }
 
         h3{
@@ -548,6 +542,11 @@
                     text-decoration: none;
                 }
             }
+        }
+
+        img{
+            margin-top: 2rem;
+            width: 20rem;
         }
 
 
